@@ -3,6 +3,7 @@ from pygame_configs import *
 import pygame
 import sys
 import os
+from controls import*
 
 colors = [red, blue, black, white, yellow]
 randomcolor = random.choice(colors)
@@ -48,7 +49,7 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.draw.circle(screen, red, [x, y], 30, 0)
         self.y = y
         self.x = x
-        self.rect = self.image
+        self.rect=self.image
         all_sprites.add(self)
 
     def control(self, y, x):

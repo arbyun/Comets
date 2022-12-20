@@ -1,17 +1,26 @@
-from main import player
-from physics import *
-import pygame
+import pygame,sys
+from pygame.locals import*
 
-if pygame.KEYDOWN:
-    if pygame.K_UP:
-        player.y += 1
-    elif pygame.K_DOWN:
-        player.y -= 1
-    elif pygame.K_LEFT:
-        player.x -= 1
-    elif pygame.K_RIGHT:
-        player.x += 1
-    elif pygame.K_ESCAPE:
-        pygame.quit()
-    elif pygame.K_SPACE:
-        shoot(player.x, player.y)
+
+pygame.init()
+
+    
+while True:
+    for event in pygame.event.get():
+        if event.type==QUIT:
+            pygame.quit()
+            sys.exit()
+        if event.type==pygame.KEYDOWN:
+            if event.key==pygame.K_UP:
+                y=y+1
+            if event.key==pygame.K_DOWN:
+                y=y-1 
+            if event.key==pygame.K_LEFT:
+                x=x-1
+            if event.key==pygame.K_RIGHT:
+                x=x+1
+            if event.key==pygame.K_ESCAPE:
+                pygame.quit()
+            if event.key==pygame.K_SPACE:
+                pass
+        
