@@ -39,7 +39,9 @@ while True:
                 p1=np.add(p1,(10,0))
                 p2=np.add(p2,(10,0))
             if event.key==pygame.K_SPACE:
-                pygame.draw.polygon(screen,(255,255,255),(p10,p20,p30,p40),1)
+                pygame.draw.rect(screen,(255,255,255),p0,p2,10)
+                
+    pygame.draw.polygon(screen,(255,255,255),(p10,p20,p30,p40),1)
     
     pygame.draw.polygon(screen,(255,255,255), (p0,p1,p2),0)
 
