@@ -17,6 +17,7 @@ p30=(800,170)
 p40=(750,270)
 
 while True:
+    screen.fill((0,0,0))
     for event in pygame.event.get():
         if event.type==QUIT:
             pygame.quit()
