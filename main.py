@@ -227,7 +227,7 @@ comet_spawn_interval = 0
 max_comets = 1 + level
 clock = pygame.time.Clock()
 maingame = True
-score = 2000
+score = 0
 
 font = pygame.font.Font(None, 36)
 font_color = WHITE
