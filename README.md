@@ -1,17 +1,66 @@
-# Comets
+# Comets 🚀  
 
-###### Daniela Dantas - 22202104,
-###### Vitória Rodrigues - 22204356
+A simple arcade-style space shooter built with Pygame. Dodge and destroy incoming comets while managing your score to purchase upgrades!  
+
+## ℹ️ About  
+
+**Comets** is a fast-paced arcade shooter where players control a spaceship, dodging and destroying incoming comets. With each comet destroyed, the difficulty increases, pushing players to react quickly and strategize their shots.  
+
+Players can spend their score in the **Upgrade Shop**, where they can trade points for power-ups—but at the cost of lowering their high score. Can you survive the meteor storm and climb the leaderboard?  
+
 ---
-#### A Daniela fez a UI do projeto, o leaderboard e fez o main. A Vitória fez o markdown e o protótipo inicial com o movimento e desenho da nave e cometa.
+
+## 📌 About the Project  
+
+This game was developed by:  
+- **Daniela Dantas (22202104)** – UI design, leaderboard, and main game integration.  
+- **Vitória Rodrigues (22204356)** – Initial prototype, movement mechanics, and comet drawing.  
+
+The project is structured as follows:  
+- **Main Menu**: Handles the game’s starting interface.  
+- **Game Loop**: Manages player controls, difficulty scaling, collision detection, and drawing elements.  
+- **Leaderboards**: Stores and displays high scores.  
+- **Game Over Screen**: Displays results after a game session.  
+- **Gameplay Features**: Includes sound effects, player mechanics, projectile handling, and enemy comets.  
+
+External libraries used: `time`, `math`, and `random`.  
+
 ---
-#### O código foi organizado com um ficheiro com o menu inicial, outro ficheiro com o menu final, outro ficheiro com os leaderboards e o ficheiro main que tem o som, as colisões,o jogador, o projetil e os cometas organizados em classes, as funções para a dificuldade do jogo, para os cometas e para o final do jogo. Depois temos o main loop do jogo, seguido pelo menu de pausa, os controlos, o aumento da dificuldade, colisões e por último temos o draw para o pygame desenhar o jogador, os cometas e os projéteis. No código também foi feito o import das bibliotecas time, math e random. 
+
+## 🎮 Controls  
+
+- **Move the spaceship** – Arrow keys  
+- **Shoot projectiles** – Spacebar  
+- **Pause the game** – P  
+- **Access the upgrade shop** – Press P (in pause menu), navigate with ↑ / ↓, and confirm with Enter  
+
 ---
-## Instruções:
-* #### Para mover a nave - utilizar as setas do teclado
-* #### Para disparar um projétil - tecla espaço
-* #### Para por o jogo em pausa - tecla P
-* #### Para ir para a loja de upgrades - tecla P, seguido de navegação com as setas para cima e para baixo e finalmente a tecla enter para confirmar
+
+## 🛒 Upgrade Shop  
+
+Players can spend their score to purchase upgrades, but be mindful—each upgrade requires sacrificing a portion of your points!  
+
 ---
-#### Nota:
-###### A loja oferece vantagens ao jogador dependendo da sua pontuação. No entanto para obter as mesmas, o jogador tem de sacrificar parte da sua pontuação.
+
+## 🛠️ Instructions 
+
+To run **Comets**, follow these steps:  
+
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/arbyun/Comets.git
+   cd comets
+   ```
+   
+2. **Install dependencies (requires Python and Pygame)**
+   ```sh
+   pip install pygame
+   ```
+3. **Run the game**
+   ```sh
+   python main.py
+   ```
+
+## 📜 License  
+
+This project is licensed under the **MIT License**.  See the [LICENSE](LICENSE) file for more details.  
